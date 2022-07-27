@@ -1,0 +1,1185 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A27B990CE0F1EB01B37905B /* Pods_Bacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA881696275A6D650045FC3A /* Pods_Bacon.framework */; };
+		EA6482C127863C4800C89090 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64827827863C4800C89090 /* APIHelper.swift */; };
+		EA6482C227863C4800C89090 /* AlamofireImplementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64827927863C4800C89090 /* AlamofireImplementations.swift */; };
+		EA6482C327863C4800C89090 /* JSONValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64827A27863C4800C89090 /* JSONValue.swift */; };
+		EA6482C427863C4800C89090 /* EventsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64827C27863C4800C89090 /* EventsAPI.swift */; };
+		EA6482C527863C4800C89090 /* SensorsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64827D27863C4800C89090 /* SensorsAPI.swift */; };
+		EA6482C627863C4800C89090 /* EnvironmentAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64827E27863C4800C89090 /* EnvironmentAPI.swift */; };
+		EA6482C727863C4800C89090 /* SystemAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64827F27863C4800C89090 /* SystemAPI.swift */; };
+		EA6482C827863C4800C89090 /* SolarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828027863C4800C89090 /* SolarAPI.swift */; };
+		EA6482C927863C4800C89090 /* IrrigationAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828127863C4800C89090 /* IrrigationAPI.swift */; };
+		EA6482CA27863C4800C89090 /* SoundAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828227863C4800C89090 /* SoundAPI.swift */; };
+		EA6482CB27863C4800C89090 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828327863C4800C89090 /* WeatherAPI.swift */; };
+		EA6482CC27863C4800C89090 /* ZonesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828427863C4800C89090 /* ZonesAPI.swift */; };
+		EA6482CD27863C4800C89090 /* ZWaveAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828527863C4800C89090 /* ZWaveAPI.swift */; };
+		EA6482CE27863C4800C89090 /* DeviceAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828627863C4800C89090 /* DeviceAPI.swift */; };
+		EA6482CF27863C4800C89090 /* CodableHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828727863C4800C89090 /* CodableHelper.swift */; };
+		EA6482D027863C4800C89090 /* JSONEncodableEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828827863C4800C89090 /* JSONEncodableEncoding.swift */; };
+		EA6482D127863C4800C89090 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828927863C4800C89090 /* APIs.swift */; };
+		EA6482D227863C4800C89090 /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828B27863C4800C89090 /* Forecast.swift */; };
+		EA6482D327863C4800C89090 /* TemperatureZoneHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828C27863C4800C89090 /* TemperatureZoneHistory.swift */; };
+		EA6482D427863C4800C89090 /* TemperatureZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828D27863C4800C89090 /* TemperatureZone.swift */; };
+		EA6482D527863C4800C89090 /* RunningItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64828E27863C4800C89090 /* RunningItem.swift */; };
+		EA6482D727863C4800C89090 /* DeviceState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829027863C4800C89090 /* DeviceState.swift */; };
+		EA6482D827863C4800C89090 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829127863C4800C89090 /* Track.swift */; };
+		EA6482D927863C4800C89090 /* DeviceRegistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829227863C4800C89090 /* DeviceRegistrationRequest.swift */; };
+		EA6482DA27863C4800C89090 /* TemperatureSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829327863C4800C89090 /* TemperatureSummary.swift */; };
+		EA6482DB27863C4800C89090 /* ElasticTranscribeConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829427863C4800C89090 /* ElasticTranscribeConfiguration.swift */; };
+		EA6482DC27863C4800C89090 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829527863C4800C89090 /* Event.swift */; };
+		EA6482DD27863C4800C89090 /* ActiveTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829627863C4800C89090 /* ActiveTrack.swift */; };
+		EA6482DF27863C4800C89090 /* DarkSkyConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829827863C4800C89090 /* DarkSkyConfiguration.swift */; };
+		EA6482E027863C4800C89090 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829927863C4800C89090 /* City.swift */; };
+		EA6482E127863C4800C89090 /* RunTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829A27863C4800C89090 /* RunTime.swift */; };
+		EA6482E227863C4800C89090 /* SoundZoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829B27863C4800C89090 /* SoundZoneStatus.swift */; };
+		EA6482E327863C4800C89090 /* OpenWeatherConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829C27863C4800C89090 /* OpenWeatherConfiguration.swift */; };
+		EA6482E427863C4800C89090 /* SensorStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829D27863C4800C89090 /* SensorStatus.swift */; };
+		EA6482E527863C4800C89090 /* LightingZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829E27863C4800C89090 /* LightingZone.swift */; };
+		EA6482E627863C4800C89090 /* IrrigationZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64829F27863C4800C89090 /* IrrigationZone.swift */; };
+		EA6482E727863C4800C89090 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A027863C4800C89090 /* Sensor.swift */; };
+		EA6482E827863C4800C89090 /* FavoriteChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A127863C4800C89090 /* FavoriteChannel.swift */; };
+		EA6482E927863C4800C89090 /* HeaterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A227863C4800C89090 /* HeaterState.swift */; };
+		EA6482EA27863C4800C89090 /* MongoDBConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A327863C4800C89090 /* MongoDBConfiguration.swift */; };
+		EA6482EB27863C4800C89090 /* AmbientLightResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A427863C4800C89090 /* AmbientLightResponse.swift */; };
+		EA6482EC27863C4800C89090 /* ForecastTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A527863C4800C89090 /* ForecastTemperature.swift */; };
+		EA6482ED27863C4800C89090 /* AmbientLightDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A627863C4800C89090 /* AmbientLightDataPoint.swift */; };
+		EA6482EE27863C4800C89090 /* IrrigationSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A727863C4800C89090 /* IrrigationSummary.swift */; };
+		EA6482EF27863C4800C89090 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482A827863C4800C89090 /* ForecastResponse.swift */; };
+		EA6482F127863C4800C89090 /* ConfigurationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482AA27863C4800C89090 /* ConfigurationInfo.swift */; };
+		EA6482F227863C4800C89090 /* LoggersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482AB27863C4800C89090 /* LoggersResponse.swift */; };
+		EA6482F327863C4800C89090 /* SolarEnergyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482AC27863C4800C89090 /* SolarEnergyResponse.swift */; };
+		EA6482F427863C4800C89090 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482AD27863C4800C89090 /* Schedule.swift */; };
+		EA6482F527863C4800C89090 /* LocationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482AE27863C4800C89090 /* LocationConfiguration.swift */; };
+		EA6482F627863C4800C89090 /* LightingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482AF27863C4800C89090 /* LightingSummary.swift */; };
+		EA6482F727863C4800C89090 /* DeviceNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B027863C4800C89090 /* DeviceNotification.swift */; };
+		EA6482F827863C4800C89090 /* ApiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B127863C4800C89090 /* ApiResponse.swift */; };
+		EA6482F927863C4800C89090 /* TemperatueZoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B227863C4800C89090 /* TemperatueZoneStatus.swift */; };
+		EA6482FA27863C4800C89090 /* ApiResponse2.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B327863C4800C89090 /* ApiResponse2.swift */; };
+		EA6482FC27863C4800C89090 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B527863C4800C89090 /* Device.swift */; };
+		EA6482FD27863C4800C89090 /* PlayerVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B627863C4800C89090 /* PlayerVolume.swift */; };
+		EA6482FE27863C4800C89090 /* WeatherForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B727863C4800C89090 /* WeatherForecast.swift */; };
+		EA6482FF27863C4800C89090 /* LightingZoneStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B827863C4800C89090 /* LightingZoneStatus.swift */; };
+		EA64830027863C4800C89090 /* IrrigationZoneConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482B927863C4800C89090 /* IrrigationZoneConfiguration.swift */; };
+		EA64830127863C4800C89090 /* SolarEnergyDataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482BA27863C4800C89090 /* SolarEnergyDataPoint.swift */; };
+		EA64830227863C4800C89090 /* DeviceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482BB27863C4800C89090 /* DeviceConfig.swift */; };
+		EA64830327863C4800C89090 /* TemperatureZoneConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482BC27863C4800C89090 /* TemperatureZoneConfiguration.swift */; };
+		EA64830427863C4800C89090 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482BD27863C4800C89090 /* Extensions.swift */; };
+		EA64830527863C4800C89090 /* JSONEncodingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482BE27863C4800C89090 /* JSONEncodingHelper.swift */; };
+		EA64830627863C4800C89090 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482BF27863C4800C89090 /* Models.swift */; };
+		EA64830727863C4800C89090 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6482C027863C4800C89090 /* Configuration.swift */; };
+		EA6483112790CF1B00C89090 /* TemperatureZoneHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6483102790CF1A00C89090 /* TemperatureZoneHistoryItem.swift */; };
+		EA881693275A6D650045FC3A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA881692275A6D650045FC3A /* Alamofire.framework */; };
+		EA8816D4275AB8BC0045FC3A /* MyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8816D3275AB8BC0045FC3A /* MyDetailView.swift */; };
+		EA8816D6275ABA6A0045FC3A /* BaseLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8816D5275ABA6A0045FC3A /* BaseLocation.swift */; };
+		EA8816D9275AD4A60045FC3A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8816D8275AD4A60045FC3A /* VideoView.swift */; };
+		EA8816DB275AE2580045FC3A /* PVideoZones.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8816DA275AE2580045FC3A /* PVideoZones.swift */; };
+		EA8816DF275AEEC10045FC3A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816DE275AEEC10045FC3A /* AudioToolbox.framework */; };
+		EA8816E1275AEEC70045FC3A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816E0275AEEC70045FC3A /* AVFoundation.framework */; };
+		EA8816E3275AEED20045FC3A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816E2275AEED20045FC3A /* CFNetwork.framework */; };
+		EA8816E5275AEED80045FC3A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816E4275AEED80045FC3A /* CoreFoundation.framework */; };
+		EA8816E7275AEEDE0045FC3A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816E6275AEEDE0045FC3A /* CoreGraphics.framework */; };
+		EA8816E9275AEEE60045FC3A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816E8275AEEE60045FC3A /* CoreMedia.framework */; };
+		EA8816EB275AEEEB0045FC3A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816EA275AEEEB0045FC3A /* CoreText.framework */; };
+		EA8816ED275AEEF10045FC3A /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816EC275AEEF10045FC3A /* CoreVideo.framework */; };
+		EA8816EF275AEEF80045FC3A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816EE275AEEF80045FC3A /* Foundation.framework */; };
+		EA8816F1275AEF010045FC3A /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816F0275AEF010045FC3A /* libbz2.tbd */; };
+		EA8816F3275AEF0A0045FC3A /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816F2275AEF0A0045FC3A /* libiconv.tbd */; };
+		EA8816F5275AEF140045FC3A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816F4275AEF140045FC3A /* OpenGL.framework */; };
+		EA8816F9275AEF200045FC3A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816F8275AEF200045FC3A /* Security.framework */; };
+		EA8816FB275AEF250045FC3A /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA8816FA275AEF250045FC3A /* VideoToolbox.framework */; };
+		EA8816FE275AF50B0045FC3A /* header.m in Sources */ = {isa = PBXBuildFile; fileRef = EA8816FD275AF50B0045FC3A /* header.m */; };
+		EA881700275C71730045FC3A /* VLCPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA8816FF275C71730045FC3A /* VLCPlayer.swift */; };
+		EA881702275D1F2F0045FC3A /* LightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA881701275D1F2E0045FC3A /* LightsView.swift */; };
+		EA881704275D28610045FC3A /* PLights.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA881703275D28610045FC3A /* PLights.swift */; };
+		EA985A812757F95D00FAED39 /* BaconApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA985A802757F95D00FAED39 /* BaconApp.swift */; };
+		EA985A832757F95D00FAED39 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA985A822757F95D00FAED39 /* ContentView.swift */; };
+		EA985A852757F96100FAED39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA985A842757F96100FAED39 /* Assets.xcassets */; };
+		EA985A882757F96200FAED39 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA985A872757F96200FAED39 /* Preview Assets.xcassets */; };
+		EA985A8A2757F96200FAED39 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA985A892757F96200FAED39 /* Persistence.swift */; };
+		EA985A8D2757F96200FAED39 /* Bacon.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA985A8B2757F96200FAED39 /* Bacon.xcdatamodeld */; };
+		EA985A982757F96200FAED39 /* BaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA985A972757F96200FAED39 /* BaconTests.swift */; };
+		EA985AA22757F96300FAED39 /* BaconUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA985AA12757F96300FAED39 /* BaconUITests.swift */; };
+		EA985AA42757F96300FAED39 /* BaconUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA985AA32757F96300FAED39 /* BaconUITestsLaunchTests.swift */; };
+		EAAF562C276C079200C6FE10 /* SystemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF562B276C079200C6FE10 /* SystemState.swift */; };
+		EAAF562E276CFEE900C6FE10 /* HeatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAF562D276CFEE900C6FE10 /* HeatingView.swift */; };
+		EAECFD3E2776A89E00C544B1 /* Moog in Frameworks */ = {isa = PBXBuildFile; productRef = EAECFD3D2776A89E00C544B1 /* Moog */; };
+		EAECFD402776B09800C544B1 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAECFD3F2776B09800C544B1 /* TestView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA985A9E2757F96300FAED39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA985A752757F95D00FAED39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA985A7C2757F95D00FAED39;
+			remoteInfo = Bacon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6A88DC99C9D2795887DF7F3C /* Pods-Bacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bacon.release.xcconfig"; path = "Target Support Files/Pods-Bacon/Pods-Bacon.release.xcconfig"; sourceTree = "<group>"; };
+		91DB947AC541DE812D0552E0 /* Pods-Bacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bacon.debug.xcconfig"; path = "Target Support Files/Pods-Bacon/Pods-Bacon.debug.xcconfig"; sourceTree = "<group>"; };
+		C787F9BDBEC79C17BC289110 /* Pods_Bacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA64827827863C4800C89090 /* APIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		EA64827927863C4800C89090 /* AlamofireImplementations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireImplementations.swift; sourceTree = "<group>"; };
+		EA64827A27863C4800C89090 /* JSONValue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONValue.swift; sourceTree = "<group>"; };
+		EA64827C27863C4800C89090 /* EventsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsAPI.swift; sourceTree = "<group>"; };
+		EA64827D27863C4800C89090 /* SensorsAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsAPI.swift; sourceTree = "<group>"; };
+		EA64827E27863C4800C89090 /* EnvironmentAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentAPI.swift; sourceTree = "<group>"; };
+		EA64827F27863C4800C89090 /* SystemAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemAPI.swift; sourceTree = "<group>"; };
+		EA64828027863C4800C89090 /* SolarAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarAPI.swift; sourceTree = "<group>"; };
+		EA64828127863C4800C89090 /* IrrigationAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrrigationAPI.swift; sourceTree = "<group>"; };
+		EA64828227863C4800C89090 /* SoundAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundAPI.swift; sourceTree = "<group>"; };
+		EA64828327863C4800C89090 /* WeatherAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		EA64828427863C4800C89090 /* ZonesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZonesAPI.swift; sourceTree = "<group>"; };
+		EA64828527863C4800C89090 /* ZWaveAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZWaveAPI.swift; sourceTree = "<group>"; };
+		EA64828627863C4800C89090 /* DeviceAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceAPI.swift; sourceTree = "<group>"; };
+		EA64828727863C4800C89090 /* CodableHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodableHelper.swift; sourceTree = "<group>"; };
+		EA64828827863C4800C89090 /* JSONEncodableEncoding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodableEncoding.swift; sourceTree = "<group>"; };
+		EA64828927863C4800C89090 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
+		EA64828B27863C4800C89090 /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		EA64828C27863C4800C89090 /* TemperatureZoneHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureZoneHistory.swift; sourceTree = "<group>"; };
+		EA64828D27863C4800C89090 /* TemperatureZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureZone.swift; sourceTree = "<group>"; };
+		EA64828E27863C4800C89090 /* RunningItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunningItem.swift; sourceTree = "<group>"; };
+		EA64829027863C4800C89090 /* DeviceState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceState.swift; sourceTree = "<group>"; };
+		EA64829127863C4800C89090 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		EA64829227863C4800C89090 /* DeviceRegistrationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceRegistrationRequest.swift; sourceTree = "<group>"; };
+		EA64829327863C4800C89090 /* TemperatureSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureSummary.swift; sourceTree = "<group>"; };
+		EA64829427863C4800C89090 /* ElasticTranscribeConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElasticTranscribeConfiguration.swift; sourceTree = "<group>"; };
+		EA64829527863C4800C89090 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		EA64829627863C4800C89090 /* ActiveTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveTrack.swift; sourceTree = "<group>"; };
+		EA64829827863C4800C89090 /* DarkSkyConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSkyConfiguration.swift; sourceTree = "<group>"; };
+		EA64829927863C4800C89090 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		EA64829A27863C4800C89090 /* RunTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RunTime.swift; sourceTree = "<group>"; };
+		EA64829B27863C4800C89090 /* SoundZoneStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundZoneStatus.swift; sourceTree = "<group>"; };
+		EA64829C27863C4800C89090 /* OpenWeatherConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenWeatherConfiguration.swift; sourceTree = "<group>"; };
+		EA64829D27863C4800C89090 /* SensorStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorStatus.swift; sourceTree = "<group>"; };
+		EA64829E27863C4800C89090 /* LightingZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingZone.swift; sourceTree = "<group>"; };
+		EA64829F27863C4800C89090 /* IrrigationZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrrigationZone.swift; sourceTree = "<group>"; };
+		EA6482A027863C4800C89090 /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		EA6482A127863C4800C89090 /* FavoriteChannel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteChannel.swift; sourceTree = "<group>"; };
+		EA6482A227863C4800C89090 /* HeaterState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaterState.swift; sourceTree = "<group>"; };
+		EA6482A327863C4800C89090 /* MongoDBConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MongoDBConfiguration.swift; sourceTree = "<group>"; };
+		EA6482A427863C4800C89090 /* AmbientLightResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbientLightResponse.swift; sourceTree = "<group>"; };
+		EA6482A527863C4800C89090 /* ForecastTemperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastTemperature.swift; sourceTree = "<group>"; };
+		EA6482A627863C4800C89090 /* AmbientLightDataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmbientLightDataPoint.swift; sourceTree = "<group>"; };
+		EA6482A727863C4800C89090 /* IrrigationSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrrigationSummary.swift; sourceTree = "<group>"; };
+		EA6482A827863C4800C89090 /* ForecastResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		EA6482AA27863C4800C89090 /* ConfigurationInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfigurationInfo.swift; sourceTree = "<group>"; };
+		EA6482AB27863C4800C89090 /* LoggersResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggersResponse.swift; sourceTree = "<group>"; };
+		EA6482AC27863C4800C89090 /* SolarEnergyResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarEnergyResponse.swift; sourceTree = "<group>"; };
+		EA6482AD27863C4800C89090 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		EA6482AE27863C4800C89090 /* LocationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationConfiguration.swift; sourceTree = "<group>"; };
+		EA6482AF27863C4800C89090 /* LightingSummary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingSummary.swift; sourceTree = "<group>"; };
+		EA6482B027863C4800C89090 /* DeviceNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceNotification.swift; sourceTree = "<group>"; };
+		EA6482B127863C4800C89090 /* ApiResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse.swift; sourceTree = "<group>"; };
+		EA6482B227863C4800C89090 /* TemperatueZoneStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatueZoneStatus.swift; sourceTree = "<group>"; };
+		EA6482B327863C4800C89090 /* ApiResponse2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResponse2.swift; sourceTree = "<group>"; };
+		EA6482B527863C4800C89090 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		EA6482B627863C4800C89090 /* PlayerVolume.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerVolume.swift; sourceTree = "<group>"; };
+		EA6482B727863C4800C89090 /* WeatherForecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherForecast.swift; sourceTree = "<group>"; };
+		EA6482B827863C4800C89090 /* LightingZoneStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightingZoneStatus.swift; sourceTree = "<group>"; };
+		EA6482B927863C4800C89090 /* IrrigationZoneConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IrrigationZoneConfiguration.swift; sourceTree = "<group>"; };
+		EA6482BA27863C4800C89090 /* SolarEnergyDataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SolarEnergyDataPoint.swift; sourceTree = "<group>"; };
+		EA6482BB27863C4800C89090 /* DeviceConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceConfig.swift; sourceTree = "<group>"; };
+		EA6482BC27863C4800C89090 /* TemperatureZoneConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureZoneConfiguration.swift; sourceTree = "<group>"; };
+		EA6482BD27863C4800C89090 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EA6482BE27863C4800C89090 /* JSONEncodingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONEncodingHelper.swift; sourceTree = "<group>"; };
+		EA6482BF27863C4800C89090 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		EA6482C027863C4800C89090 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		EA6483102790CF1A00C89090 /* TemperatureZoneHistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureZoneHistoryItem.swift; sourceTree = "<group>"; };
+		EA88168E275A6B5B0045FC3A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA881690275A6D540045FC3A /* Pods_Bacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Bacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA881692275A6D650045FC3A /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA881694275A6D650045FC3A /* MobileVLCKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = MobileVLCKit.xcframework; path = Pods/MobileVLCKit/MobileVLCKit.xcframework; sourceTree = "<group>"; };
+		EA881696275A6D650045FC3A /* Pods_Bacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_Bacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA8816D3275AB8BC0045FC3A /* MyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDetailView.swift; sourceTree = "<group>"; };
+		EA8816D5275ABA6A0045FC3A /* BaseLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLocation.swift; sourceTree = "<group>"; };
+		EA8816D8275AD4A60045FC3A /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		EA8816DA275AE2580045FC3A /* PVideoZones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PVideoZones.swift; sourceTree = "<group>"; };
+		EA8816DC275AE6C60045FC3A /* VLCKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VLCKit.framework; path = Pods/VLCKit/VLCKit.framework; sourceTree = "<group>"; };
+		EA8816DE275AEEC10045FC3A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		EA8816E0275AEEC70045FC3A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EA8816E2275AEED20045FC3A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		EA8816E4275AEED80045FC3A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		EA8816E6275AEEDE0045FC3A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EA8816E8275AEEE60045FC3A /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		EA8816EA275AEEEB0045FC3A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		EA8816EC275AEEF10045FC3A /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EA8816EE275AEEF80045FC3A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EA8816F0275AEF010045FC3A /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		EA8816F2275AEF0A0045FC3A /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		EA8816F4275AEF140045FC3A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		EA8816F6275AEF1A0045FC3A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EA8816F8275AEF200045FC3A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		EA8816FA275AEF250045FC3A /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		EA8816FC275AF50A0045FC3A /* Bacon-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bacon-Bridging-Header.h"; sourceTree = "<group>"; };
+		EA8816FD275AF50B0045FC3A /* header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = header.m; sourceTree = "<group>"; };
+		EA8816FF275C71730045FC3A /* VLCPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VLCPlayer.swift; sourceTree = "<group>"; };
+		EA881701275D1F2E0045FC3A /* LightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightsView.swift; sourceTree = "<group>"; };
+		EA881703275D28610045FC3A /* PLights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PLights.swift; sourceTree = "<group>"; };
+		EA985A7D2757F95D00FAED39 /* Bacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bacon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA985A802757F95D00FAED39 /* BaconApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconApp.swift; sourceTree = "<group>"; };
+		EA985A822757F95D00FAED39 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA985A842757F96100FAED39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA985A872757F96200FAED39 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA985A892757F96200FAED39 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		EA985A8C2757F96200FAED39 /* Bacon.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bacon.xcdatamodel; sourceTree = "<group>"; };
+		EA985A8E2757F96200FAED39 /* Bacon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bacon.entitlements; sourceTree = "<group>"; };
+		EA985A932757F96200FAED39 /* BaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaconTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA985A972757F96200FAED39 /* BaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconTests.swift; sourceTree = "<group>"; };
+		EA985A9D2757F96300FAED39 /* BaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BaconUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA985AA12757F96300FAED39 /* BaconUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconUITests.swift; sourceTree = "<group>"; };
+		EA985AA32757F96300FAED39 /* BaconUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaconUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAAF562B276C079200C6FE10 /* SystemState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemState.swift; sourceTree = "<group>"; };
+		EAAF562D276CFEE900C6FE10 /* HeatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatingView.swift; sourceTree = "<group>"; };
+		EAECFD3A27753E4900C544B1 /* Moog */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Moog; path = ../Moog; sourceTree = "<group>"; };
+		EAECFD3F2776B09800C544B1 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA985A7A2757F95D00FAED39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAECFD3E2776A89E00C544B1 /* Moog in Frameworks */,
+				EA8816FB275AEF250045FC3A /* VideoToolbox.framework in Frameworks */,
+				EA8816F9275AEF200045FC3A /* Security.framework in Frameworks */,
+				EA8816F5275AEF140045FC3A /* OpenGL.framework in Frameworks */,
+				EA8816F3275AEF0A0045FC3A /* libiconv.tbd in Frameworks */,
+				EA8816F1275AEF010045FC3A /* libbz2.tbd in Frameworks */,
+				EA8816EF275AEEF80045FC3A /* Foundation.framework in Frameworks */,
+				EA8816ED275AEEF10045FC3A /* CoreVideo.framework in Frameworks */,
+				EA8816EB275AEEEB0045FC3A /* CoreText.framework in Frameworks */,
+				EA8816E9275AEEE60045FC3A /* CoreMedia.framework in Frameworks */,
+				EA8816E7275AEEDE0045FC3A /* CoreGraphics.framework in Frameworks */,
+				EA8816E5275AEED80045FC3A /* CoreFoundation.framework in Frameworks */,
+				EA8816E3275AEED20045FC3A /* CFNetwork.framework in Frameworks */,
+				EA8816E1275AEEC70045FC3A /* AVFoundation.framework in Frameworks */,
+				EA8816DF275AEEC10045FC3A /* AudioToolbox.framework in Frameworks */,
+				EA881693275A6D650045FC3A /* Alamofire.framework in Frameworks */,
+				0A27B990CE0F1EB01B37905B /* Pods_Bacon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA985A902757F96200FAED39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA985A9A2757F96300FAED39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		836765A1B574B461456EF65F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA8816FA275AEF250045FC3A /* VideoToolbox.framework */,
+				EA8816F8275AEF200045FC3A /* Security.framework */,
+				EA8816F6275AEF1A0045FC3A /* QuartzCore.framework */,
+				EA8816F4275AEF140045FC3A /* OpenGL.framework */,
+				EA8816F2275AEF0A0045FC3A /* libiconv.tbd */,
+				EA8816F0275AEF010045FC3A /* libbz2.tbd */,
+				EA8816EE275AEEF80045FC3A /* Foundation.framework */,
+				EA8816EC275AEEF10045FC3A /* CoreVideo.framework */,
+				EA8816EA275AEEEB0045FC3A /* CoreText.framework */,
+				EA8816E8275AEEE60045FC3A /* CoreMedia.framework */,
+				EA8816E6275AEEDE0045FC3A /* CoreGraphics.framework */,
+				EA8816E4275AEED80045FC3A /* CoreFoundation.framework */,
+				EA8816E2275AEED20045FC3A /* CFNetwork.framework */,
+				EA8816E0275AEEC70045FC3A /* AVFoundation.framework */,
+				EA8816DE275AEEC10045FC3A /* AudioToolbox.framework */,
+				EA8816DC275AE6C60045FC3A /* VLCKit.framework */,
+				EA881692275A6D650045FC3A /* Alamofire.framework */,
+				EA881694275A6D650045FC3A /* MobileVLCKit.xcframework */,
+				EA881696275A6D650045FC3A /* Pods_Bacon.framework */,
+				EA881690275A6D540045FC3A /* Pods_Bacon.framework */,
+				EA88168E275A6B5B0045FC3A /* Alamofire.framework */,
+				C787F9BDBEC79C17BC289110 /* Pods_Bacon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB4ABCA0E3CAC07CC45979B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91DB947AC541DE812D0552E0 /* Pods-Bacon.debug.xcconfig */,
+				6A88DC99C9D2795887DF7F3C /* Pods-Bacon.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA64827527863C4800C89090 /* SwaggerClient */ = {
+			isa = PBXGroup;
+			children = (
+				EA64827627863C4800C89090 /* Classes */,
+			);
+			path = SwaggerClient;
+			sourceTree = "<group>";
+		};
+		EA64827627863C4800C89090 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EA64827727863C4800C89090 /* Swaggers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EA64827727863C4800C89090 /* Swaggers */ = {
+			isa = PBXGroup;
+			children = (
+				EA64827827863C4800C89090 /* APIHelper.swift */,
+				EA64827927863C4800C89090 /* AlamofireImplementations.swift */,
+				EA64827A27863C4800C89090 /* JSONValue.swift */,
+				EA64827B27863C4800C89090 /* APIs */,
+				EA64828727863C4800C89090 /* CodableHelper.swift */,
+				EA64828827863C4800C89090 /* JSONEncodableEncoding.swift */,
+				EA64828927863C4800C89090 /* APIs.swift */,
+				EA64828A27863C4800C89090 /* Models */,
+				EA6482BD27863C4800C89090 /* Extensions.swift */,
+				EA6482BE27863C4800C89090 /* JSONEncodingHelper.swift */,
+				EA6482BF27863C4800C89090 /* Models.swift */,
+				EA6482C027863C4800C89090 /* Configuration.swift */,
+			);
+			path = Swaggers;
+			sourceTree = "<group>";
+		};
+		EA64827B27863C4800C89090 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				EA64827C27863C4800C89090 /* EventsAPI.swift */,
+				EA64827D27863C4800C89090 /* SensorsAPI.swift */,
+				EA64827E27863C4800C89090 /* EnvironmentAPI.swift */,
+				EA64827F27863C4800C89090 /* SystemAPI.swift */,
+				EA64828027863C4800C89090 /* SolarAPI.swift */,
+				EA64828127863C4800C89090 /* IrrigationAPI.swift */,
+				EA64828227863C4800C89090 /* SoundAPI.swift */,
+				EA64828327863C4800C89090 /* WeatherAPI.swift */,
+				EA64828427863C4800C89090 /* ZonesAPI.swift */,
+				EA64828527863C4800C89090 /* ZWaveAPI.swift */,
+				EA64828627863C4800C89090 /* DeviceAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		EA64828A27863C4800C89090 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EA6483102790CF1A00C89090 /* TemperatureZoneHistoryItem.swift */,
+				EA64829627863C4800C89090 /* ActiveTrack.swift */,
+				EA6482A627863C4800C89090 /* AmbientLightDataPoint.swift */,
+				EA6482A427863C4800C89090 /* AmbientLightResponse.swift */,
+				EA6482B127863C4800C89090 /* ApiResponse.swift */,
+				EA6482B327863C4800C89090 /* ApiResponse2.swift */,
+				EA64829927863C4800C89090 /* City.swift */,
+				EA6482AA27863C4800C89090 /* ConfigurationInfo.swift */,
+				EA64829827863C4800C89090 /* DarkSkyConfiguration.swift */,
+				EA6482B527863C4800C89090 /* Device.swift */,
+				EA6482BB27863C4800C89090 /* DeviceConfig.swift */,
+				EA6482B027863C4800C89090 /* DeviceNotification.swift */,
+				EA64829227863C4800C89090 /* DeviceRegistrationRequest.swift */,
+				EA64829027863C4800C89090 /* DeviceState.swift */,
+				EA64829427863C4800C89090 /* ElasticTranscribeConfiguration.swift */,
+				EA64829527863C4800C89090 /* Event.swift */,
+				EA6482A127863C4800C89090 /* FavoriteChannel.swift */,
+				EA64828B27863C4800C89090 /* Forecast.swift */,
+				EA6482A827863C4800C89090 /* ForecastResponse.swift */,
+				EA6482A527863C4800C89090 /* ForecastTemperature.swift */,
+				EA6482A227863C4800C89090 /* HeaterState.swift */,
+				EA6482A727863C4800C89090 /* IrrigationSummary.swift */,
+				EA64829F27863C4800C89090 /* IrrigationZone.swift */,
+				EA6482B927863C4800C89090 /* IrrigationZoneConfiguration.swift */,
+				EA6482AF27863C4800C89090 /* LightingSummary.swift */,
+				EA64829E27863C4800C89090 /* LightingZone.swift */,
+				EA6482B827863C4800C89090 /* LightingZoneStatus.swift */,
+				EA6482AE27863C4800C89090 /* LocationConfiguration.swift */,
+				EA6482AB27863C4800C89090 /* LoggersResponse.swift */,
+				EA6482A327863C4800C89090 /* MongoDBConfiguration.swift */,
+				EA64829C27863C4800C89090 /* OpenWeatherConfiguration.swift */,
+				EA6482B627863C4800C89090 /* PlayerVolume.swift */,
+				EA64828E27863C4800C89090 /* RunningItem.swift */,
+				EA64829A27863C4800C89090 /* RunTime.swift */,
+				EA6482AD27863C4800C89090 /* Schedule.swift */,
+				EA6482A027863C4800C89090 /* Sensor.swift */,
+				EA64829D27863C4800C89090 /* SensorStatus.swift */,
+				EA6482BA27863C4800C89090 /* SolarEnergyDataPoint.swift */,
+				EA6482AC27863C4800C89090 /* SolarEnergyResponse.swift */,
+				EA64829B27863C4800C89090 /* SoundZoneStatus.swift */,
+				EA6482B227863C4800C89090 /* TemperatueZoneStatus.swift */,
+				EA64829327863C4800C89090 /* TemperatureSummary.swift */,
+				EA64828D27863C4800C89090 /* TemperatureZone.swift */,
+				EA6482BC27863C4800C89090 /* TemperatureZoneConfiguration.swift */,
+				EA64828C27863C4800C89090 /* TemperatureZoneHistory.swift */,
+				EA64829127863C4800C89090 /* Track.swift */,
+				EA6482B727863C4800C89090 /* WeatherForecast.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EA8816D7275ABCE80045FC3A /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				EA985A892757F96200FAED39 /* Persistence.swift */,
+				EA8816DA275AE2580045FC3A /* PVideoZones.swift */,
+				EA881703275D28610045FC3A /* PLights.swift */,
+				EAAF562B276C079200C6FE10 /* SystemState.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		EA985A742757F95D00FAED39 = {
+			isa = PBXGroup;
+			children = (
+				EAECFD3A27753E4900C544B1 /* Moog */,
+				EA985A7F2757F95D00FAED39 /* Bacon */,
+				EA985A962757F96200FAED39 /* BaconTests */,
+				EA985AA02757F96300FAED39 /* BaconUITests */,
+				EA985A7E2757F95D00FAED39 /* Products */,
+				BB4ABCA0E3CAC07CC45979B1 /* Pods */,
+				836765A1B574B461456EF65F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA985A7E2757F95D00FAED39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA985A7D2757F95D00FAED39 /* Bacon.app */,
+				EA985A932757F96200FAED39 /* BaconTests.xctest */,
+				EA985A9D2757F96300FAED39 /* BaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA985A7F2757F95D00FAED39 /* Bacon */ = {
+			isa = PBXGroup;
+			children = (
+				EA64827527863C4800C89090 /* SwaggerClient */,
+				EA985A842757F96100FAED39 /* Assets.xcassets */,
+				EA8816FC275AF50A0045FC3A /* Bacon-Bridging-Header.h */,
+				EA985A8E2757F96200FAED39 /* Bacon.entitlements */,
+				EA985A8B2757F96200FAED39 /* Bacon.xcdatamodeld */,
+				EA985A802757F95D00FAED39 /* BaconApp.swift */,
+				EA8816D5275ABA6A0045FC3A /* BaseLocation.swift */,
+				EA985A822757F95D00FAED39 /* ContentView.swift */,
+				EA8816FD275AF50B0045FC3A /* header.m */,
+				EAAF562D276CFEE900C6FE10 /* HeatingView.swift */,
+				EA881701275D1F2E0045FC3A /* LightsView.swift */,
+				EA8816D3275AB8BC0045FC3A /* MyDetailView.swift */,
+				EA8816D7275ABCE80045FC3A /* Persistence */,
+				EA985A862757F96200FAED39 /* Preview Content */,
+				EAECFD3F2776B09800C544B1 /* TestView.swift */,
+				EA8816D8275AD4A60045FC3A /* VideoView.swift */,
+				EA8816FF275C71730045FC3A /* VLCPlayer.swift */,
+			);
+			path = Bacon;
+			sourceTree = "<group>";
+		};
+		EA985A862757F96200FAED39 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA985A872757F96200FAED39 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA985A962757F96200FAED39 /* BaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA985A972757F96200FAED39 /* BaconTests.swift */,
+			);
+			path = BaconTests;
+			sourceTree = "<group>";
+		};
+		EA985AA02757F96300FAED39 /* BaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA985AA12757F96300FAED39 /* BaconUITests.swift */,
+				EA985AA32757F96300FAED39 /* BaconUITestsLaunchTests.swift */,
+			);
+			path = BaconUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA985A7C2757F95D00FAED39 /* Bacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA985AA72757F96300FAED39 /* Build configuration list for PBXNativeTarget "Bacon" */;
+			buildPhases = (
+				58A8AC6AFBA948A63E4BA065 /* [CP] Check Pods Manifest.lock */,
+				EA985A792757F95D00FAED39 /* Sources */,
+				EA985A7A2757F95D00FAED39 /* Frameworks */,
+				EA985A7B2757F95D00FAED39 /* Resources */,
+				D260667026551F2A1599C09B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA6AE593277A391E00A96F6D /* PBXTargetDependency */,
+				EAECFD3C2776A80500C544B1 /* PBXTargetDependency */,
+			);
+			name = Bacon;
+			packageProductDependencies = (
+				EAECFD3D2776A89E00C544B1 /* Moog */,
+			);
+			productName = Bacon;
+			productReference = EA985A7D2757F95D00FAED39 /* Bacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA985A922757F96200FAED39 /* BaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA985AAA2757F96300FAED39 /* Build configuration list for PBXNativeTarget "BaconTests" */;
+			buildPhases = (
+				EA985A8F2757F96200FAED39 /* Sources */,
+				EA985A902757F96200FAED39 /* Frameworks */,
+				EA985A912757F96200FAED39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BaconTests;
+			productName = BaconTests;
+			productReference = EA985A932757F96200FAED39 /* BaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA985A9C2757F96300FAED39 /* BaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA985AAD2757F96300FAED39 /* Build configuration list for PBXNativeTarget "BaconUITests" */;
+			buildPhases = (
+				EA985A992757F96300FAED39 /* Sources */,
+				EA985A9A2757F96300FAED39 /* Frameworks */,
+				EA985A9B2757F96300FAED39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA985A9F2757F96300FAED39 /* PBXTargetDependency */,
+			);
+			name = BaconUITests;
+			productName = BaconUITests;
+			productReference = EA985A9D2757F96300FAED39 /* BaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA985A752757F95D00FAED39 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					EA985A7C2757F95D00FAED39 = {
+						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
+					};
+					EA985A922757F96200FAED39 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = EA985A7C2757F95D00FAED39;
+					};
+					EA985A9C2757F96300FAED39 = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = EA985A7C2757F95D00FAED39;
+					};
+				};
+			};
+			buildConfigurationList = EA985A782757F95D00FAED39 /* Build configuration list for PBXProject "Bacon" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA985A742757F95D00FAED39;
+			packageReferences = (
+			);
+			productRefGroup = EA985A7E2757F95D00FAED39 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA985A7C2757F95D00FAED39 /* Bacon */,
+				EA985A922757F96200FAED39 /* BaconTests */,
+				EA985A9C2757F96300FAED39 /* BaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA985A7B2757F95D00FAED39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA985A882757F96200FAED39 /* Preview Assets.xcassets in Resources */,
+				EA985A852757F96100FAED39 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA985A912757F96200FAED39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA985A9B2757F96300FAED39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58A8AC6AFBA948A63E4BA065 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bacon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D260667026551F2A1599C09B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bacon/Pods-Bacon-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bacon/Pods-Bacon-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bacon/Pods-Bacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA985A792757F95D00FAED39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6482CD27863C4800C89090 /* ZWaveAPI.swift in Sources */,
+				EA6482F927863C4800C89090 /* TemperatueZoneStatus.swift in Sources */,
+				EA6482DC27863C4800C89090 /* Event.swift in Sources */,
+				EA8816D9275AD4A60045FC3A /* VideoView.swift in Sources */,
+				EA6482E527863C4800C89090 /* LightingZone.swift in Sources */,
+				EA6482C827863C4800C89090 /* SolarAPI.swift in Sources */,
+				EA6482FD27863C4800C89090 /* PlayerVolume.swift in Sources */,
+				EA6482F627863C4800C89090 /* LightingSummary.swift in Sources */,
+				EA64830527863C4800C89090 /* JSONEncodingHelper.swift in Sources */,
+				EAAF562E276CFEE900C6FE10 /* HeatingView.swift in Sources */,
+				EA985A8A2757F96200FAED39 /* Persistence.swift in Sources */,
+				EA8816DB275AE2580045FC3A /* PVideoZones.swift in Sources */,
+				EA6482C127863C4800C89090 /* APIHelper.swift in Sources */,
+				EA6482D427863C4800C89090 /* TemperatureZone.swift in Sources */,
+				EA6482ED27863C4800C89090 /* AmbientLightDataPoint.swift in Sources */,
+				EA6482E327863C4800C89090 /* OpenWeatherConfiguration.swift in Sources */,
+				EA6482EA27863C4800C89090 /* MongoDBConfiguration.swift in Sources */,
+				EAECFD402776B09800C544B1 /* TestView.swift in Sources */,
+				EA6482EF27863C4800C89090 /* ForecastResponse.swift in Sources */,
+				EA64830127863C4800C89090 /* SolarEnergyDataPoint.swift in Sources */,
+				EA6482C427863C4800C89090 /* EventsAPI.swift in Sources */,
+				EA6482F227863C4800C89090 /* LoggersResponse.swift in Sources */,
+				EA6482E227863C4800C89090 /* SoundZoneStatus.swift in Sources */,
+				EA6482C927863C4800C89090 /* IrrigationAPI.swift in Sources */,
+				EA881702275D1F2F0045FC3A /* LightsView.swift in Sources */,
+				EA6482FC27863C4800C89090 /* Device.swift in Sources */,
+				EA6482EE27863C4800C89090 /* IrrigationSummary.swift in Sources */,
+				EA6482E627863C4800C89090 /* IrrigationZone.swift in Sources */,
+				EA6482F127863C4800C89090 /* ConfigurationInfo.swift in Sources */,
+				EA6482FE27863C4800C89090 /* WeatherForecast.swift in Sources */,
+				EA6482E427863C4800C89090 /* SensorStatus.swift in Sources */,
+				EA6482DD27863C4800C89090 /* ActiveTrack.swift in Sources */,
+				EA881704275D28610045FC3A /* PLights.swift in Sources */,
+				EA6482FF27863C4800C89090 /* LightingZoneStatus.swift in Sources */,
+				EA6482DF27863C4800C89090 /* DarkSkyConfiguration.swift in Sources */,
+				EA881700275C71730045FC3A /* VLCPlayer.swift in Sources */,
+				EA8816D6275ABA6A0045FC3A /* BaseLocation.swift in Sources */,
+				EA8816D4275AB8BC0045FC3A /* MyDetailView.swift in Sources */,
+				EA6482EB27863C4800C89090 /* AmbientLightResponse.swift in Sources */,
+				EA6482C627863C4800C89090 /* EnvironmentAPI.swift in Sources */,
+				EA6482C727863C4800C89090 /* SystemAPI.swift in Sources */,
+				EA6482F827863C4800C89090 /* ApiResponse.swift in Sources */,
+				EA6482CC27863C4800C89090 /* ZonesAPI.swift in Sources */,
+				EA6482D127863C4800C89090 /* APIs.swift in Sources */,
+				EA6482F327863C4800C89090 /* SolarEnergyResponse.swift in Sources */,
+				EA6482D527863C4800C89090 /* RunningItem.swift in Sources */,
+				EA64830327863C4800C89090 /* TemperatureZoneConfiguration.swift in Sources */,
+				EA6482E927863C4800C89090 /* HeaterState.swift in Sources */,
+				EA6482F427863C4800C89090 /* Schedule.swift in Sources */,
+				EA985A8D2757F96200FAED39 /* Bacon.xcdatamodeld in Sources */,
+				EA6483112790CF1B00C89090 /* TemperatureZoneHistoryItem.swift in Sources */,
+				EA64830727863C4800C89090 /* Configuration.swift in Sources */,
+				EA6482E727863C4800C89090 /* Sensor.swift in Sources */,
+				EA8816FE275AF50B0045FC3A /* header.m in Sources */,
+				EA6482D827863C4800C89090 /* Track.swift in Sources */,
+				EA6482E127863C4800C89090 /* RunTime.swift in Sources */,
+				EA6482F727863C4800C89090 /* DeviceNotification.swift in Sources */,
+				EA6482D027863C4800C89090 /* JSONEncodableEncoding.swift in Sources */,
+				EA6482DB27863C4800C89090 /* ElasticTranscribeConfiguration.swift in Sources */,
+				EA985A832757F95D00FAED39 /* ContentView.swift in Sources */,
+				EA6482C227863C4800C89090 /* AlamofireImplementations.swift in Sources */,
+				EA6482E827863C4800C89090 /* FavoriteChannel.swift in Sources */,
+				EA6482E027863C4800C89090 /* City.swift in Sources */,
+				EA6482F527863C4800C89090 /* LocationConfiguration.swift in Sources */,
+				EA6482C327863C4800C89090 /* JSONValue.swift in Sources */,
+				EA6482DA27863C4800C89090 /* TemperatureSummary.swift in Sources */,
+				EAAF562C276C079200C6FE10 /* SystemState.swift in Sources */,
+				EA64830027863C4800C89090 /* IrrigationZoneConfiguration.swift in Sources */,
+				EA64830227863C4800C89090 /* DeviceConfig.swift in Sources */,
+				EA64830627863C4800C89090 /* Models.swift in Sources */,
+				EA6482C527863C4800C89090 /* SensorsAPI.swift in Sources */,
+				EA6482D927863C4800C89090 /* DeviceRegistrationRequest.swift in Sources */,
+				EA6482CE27863C4800C89090 /* DeviceAPI.swift in Sources */,
+				EA6482CB27863C4800C89090 /* WeatherAPI.swift in Sources */,
+				EA985A812757F95D00FAED39 /* BaconApp.swift in Sources */,
+				EA6482EC27863C4800C89090 /* ForecastTemperature.swift in Sources */,
+				EA6482CF27863C4800C89090 /* CodableHelper.swift in Sources */,
+				EA6482D227863C4800C89090 /* Forecast.swift in Sources */,
+				EA6482D727863C4800C89090 /* DeviceState.swift in Sources */,
+				EA64830427863C4800C89090 /* Extensions.swift in Sources */,
+				EA6482CA27863C4800C89090 /* SoundAPI.swift in Sources */,
+				EA6482FA27863C4800C89090 /* ApiResponse2.swift in Sources */,
+				EA6482D327863C4800C89090 /* TemperatureZoneHistory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA985A8F2757F96200FAED39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA985A982757F96200FAED39 /* BaconTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA985A992757F96300FAED39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA985AA42757F96300FAED39 /* BaconUITestsLaunchTests.swift in Sources */,
+				EA985AA22757F96300FAED39 /* BaconUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA6AE593277A391E00A96F6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = EA6AE592277A391E00A96F6D /* SwiftUICharts */;
+		};
+		EA985A9F2757F96300FAED39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA985A7C2757F95D00FAED39 /* Bacon */;
+			targetProxy = EA985A9E2757F96300FAED39 /* PBXContainerItemProxy */;
+		};
+		EAECFD3C2776A80500C544B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = EAECFD3B2776A80500C544B1 /* Moog */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA985AA52757F96300FAED39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA985AA62757F96300FAED39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		EA985AA82757F96300FAED39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91DB947AC541DE812D0552E0 /* Pods-Bacon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bacon/Bacon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bacon/Preview Content\"";
+				DEVELOPMENT_TEAM = RGV7LG27C8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/VLCKit",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.eatbacon.mac.Bacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bacon/Bacon-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA985AA92757F96300FAED39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A88DC99C9D2795887DF7F3C /* Pods-Bacon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Bacon/Bacon.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Bacon/Preview Content\"";
+				DEVELOPMENT_TEAM = RGV7LG27C8;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/VLCKit",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.eatbacon.mac.Bacon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Bacon/Bacon-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA985AAB2757F96300FAED39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGV7LG27C8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.eatbacon.mac.BaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bacon.app/Contents/MacOS/Bacon";
+			};
+			name = Debug;
+		};
+		EA985AAC2757F96300FAED39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGV7LG27C8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.eatbacon.mac.BaconTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bacon.app/Contents/MacOS/Bacon";
+			};
+			name = Release;
+		};
+		EA985AAE2757F96300FAED39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGV7LG27C8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.eatbacon.mac.BaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Bacon;
+			};
+			name = Debug;
+		};
+		EA985AAF2757F96300FAED39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RGV7LG27C8;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.eatbacon.mac.BaconUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Bacon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA985A782757F95D00FAED39 /* Build configuration list for PBXProject "Bacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA985AA52757F96300FAED39 /* Debug */,
+				EA985AA62757F96300FAED39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA985AA72757F96300FAED39 /* Build configuration list for PBXNativeTarget "Bacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA985AA82757F96300FAED39 /* Debug */,
+				EA985AA92757F96300FAED39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA985AAA2757F96300FAED39 /* Build configuration list for PBXNativeTarget "BaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA985AAB2757F96300FAED39 /* Debug */,
+				EA985AAC2757F96300FAED39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA985AAD2757F96300FAED39 /* Build configuration list for PBXNativeTarget "BaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA985AAE2757F96300FAED39 /* Debug */,
+				EA985AAF2757F96300FAED39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EA6AE58F277A346200A96F6D /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.1";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EA6AE592277A391E00A96F6D /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EA6AE58F277A346200A96F6D /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		EAECFD3B2776A80500C544B1 /* Moog */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Moog;
+		};
+		EAECFD3D2776A89E00C544B1 /* Moog */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Moog;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		EA985A8B2757F96200FAED39 /* Bacon.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EA985A8C2757F96200FAED39 /* Bacon.xcdatamodel */,
+			);
+			currentVersion = EA985A8C2757F96200FAED39 /* Bacon.xcdatamodel */;
+			path = Bacon.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EA985A752757F95D00FAED39 /* Project object */;
+}
